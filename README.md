@@ -96,5 +96,12 @@ Replace **backup01** with the name of the pool you have just created. Exporting 
 Fixing boot delays caused by unimportable pools
 -----------------------------------------------
 
-If you are using multiple ZFS pools with some on removable disks that aren't always connected to your machine then you may experience a delay during boot if you have updated your kernel when an external pool is imported that isn't always attached because it gets added to the initramfs zpool cache when a kernel update/install updates it. The fix is to clear your zpool cache and update your initramfs as [described for Arch here.](https://wiki.archlinux.org/index.php/ZFS#Fix_slow_boot_caused_by_failed_import_of_unavailable_pools_in_the_initramfs_zpool.cache).
+If you are using multiple ZFS pools with some on removable disks that aren't always connected to your machine then you may experience a delay during boot if you have updated your kernel when an external pool is imported that isn't always attached because it gets added to the initramfs zpool cache when a kernel update/install updates it. The fix is to clear your zpool cache and update your initramfs as [described for Arch here.](https://wiki.archlinux.org/index.php/ZFS#Fix_slow_boot_caused_by_failed_import_of_unavailable_pools_in_the_initramfs_zpool.cache)
 
+See also
+--------
+
+[ALEZ](https://github.com/danboid/ALEZ) - The Arch Linux Easy ZFS installer is the easiest way to install (Arch) Linux onto a ZFS root filesystem.
+[The FreeBSD Handbook ZFS chapter](https://www.freebsd.org/doc/handbook/zfs.html) - If you are new to ZFS, reading the FreeBSD ZFS chapter is an excellent way to learn ZFS. Most of the commands are identical under Linux.
+[Arch wiki ZFS page](https://wiki.archlinux.org/index.php/ZFS) - The Arch Linux ZFS wiki page is largest Linux-specific ZFS resource online. Most of it applies to all Linux distros.
+[Gentoo wiki ZFS page](https://wiki.gentoo.org/wiki/ZFS) - The gentoo wiki page is another good ZoL resource. Again, most of it applies to all Linux distros, not just gentoo.
