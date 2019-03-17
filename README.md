@@ -102,6 +102,10 @@ See also
 --------
 
 [ALEZ](https://github.com/danboid/ALEZ) - The Arch Linux Easy ZFS installer is the easiest way to install (Arch) Linux onto a ZFS root filesystem.
+
 [The FreeBSD Handbook ZFS chapter](https://www.freebsd.org/doc/handbook/zfs.html) - If you are new to ZFS, reading the FreeBSD ZFS chapter is an excellent way to learn ZFS. Most of the commands are identical under Linux.
+
 [Arch wiki ZFS page](https://wiki.archlinux.org/index.php/ZFS) - The Arch Linux ZFS wiki page is largest Linux-specific ZFS resource online. Most of it applies to all Linux distros.
+
 [Gentoo wiki ZFS page](https://wiki.gentoo.org/wiki/ZFS) - The gentoo wiki page is another good ZoL resource. Again, most of it applies to all Linux distros, not just gentoo.
+
