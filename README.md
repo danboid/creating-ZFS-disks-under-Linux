@@ -91,6 +91,8 @@ The ZFS pool has been created and configured along with a dataset. We can now fi
 $ sudo zpool export backup01
 ```
 
+Replace **backup01** with the name of the pool you have just created. Exporting a ZFS pool is analagous to unmounting it, in more conventional UNIX terms. After exporting the disk containing the pool it can be safely removed from the system.
+
 Fixing boot delays caused by unimportable pools
 -----------------------------------------------
 
