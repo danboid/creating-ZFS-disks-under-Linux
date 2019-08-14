@@ -11,7 +11,7 @@ Install ZFS and gdisk
 This depends upon your Linux distro. Under Ubuntu you would run:
 
 ```
-$ sudo apt install zfs-dkms gdisk
+$ sudo apt install zfsutils-linux gdisk
 ```
 
 To install the required software.
