@@ -46,7 +46,7 @@ There are two ways you can create your pool when creating it under Linux. If you
 If you are certain you will only ever want to import your pool (mount your ZFS disk) on Linux machines then you can run:
 
 ```
-$ sudo zpool create -f -d -m none -o ashift=12 -o feature@lz4_compress=enabled backup01 /dev/sdb
+$ sudo zpool create -f -d -m none -o ashift=12 -O atime=off -O compression=lz4 backup01 /dev/sdb
 ```
 
 Replace **backup01** with the name of your ZFS pool and replace **/dev/sdb** with the correct device. The pool name is the name you will use with `zpool import` to import (mount) the ZFS pool/disk.
@@ -60,7 +60,7 @@ $ sudo zpool create -f -d -m none -o ashift=12 -o feature@lz4_compress=enabled \
 -o feature@userobj_accounting=disabled backup01 /dev/sdb
 ```
 
-Again, replace **backup01** with the name of your ZFS pool and **/dev/sdb** with the device with the empty Solaris partition to use for the pool.
+Again, replace **backup01** with the name of your ZFS pool and **/dev/sdb** with the device with the empty Solaris partition to use for the pool. Pools created with this command should play nicely with FreeBSD versions 12.x and earlier. It shouldn't be necessary to disable features when sharing pools with FreeBSD 13.x and later because by that time it should've switched to using OpenZFS and as such will have feature parity with Linux ZFS.
 
 Create a dataset
 ----------------
