@@ -46,7 +46,7 @@ There are two ways you can create your pool when creating it under Linux. If you
 If you are certain you will only ever want to import your pool (mount your ZFS disk) on Linux machines then you can run:
 
 ```
-$ sudo zpool create -f -d -m none -o ashift=12 -O atime=off -O compression=lz4 backup01 /dev/sdb
+$ sudo zpool create -f -d -m none -o ashift=12 -O atime=off -o feature@lz4_compress=enabled backup02 /dev/sdb1
 ```
 
 Replace **backup01** with the name of your ZFS pool and replace **/dev/sdb** with the correct device. The pool name is the name you will use with `zpool import` to import (mount) the ZFS pool/disk.
